@@ -8,10 +8,14 @@ import mock from './mock/mock.js';
 import store from './store/store'
 /* eslint-disable*/
 Vue.config.productionTip = false
-
 export let client = axios.create({
-  baseURL: "",
+  baseURL: "https://suechon.github.io/vue-alert/",
 })
+// if (JSON.parse(process.env.VUE_APP_USE_MOCK)) {
+//   client = axios.create({
+//     baseURL: "",
+//   })
+// }
 Vue.prototype.$axios = axios
 
 //mock起動の設定

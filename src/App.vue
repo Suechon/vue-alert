@@ -3,7 +3,7 @@
     <v-main>
       <v-container fluid>
         <Alert />
-        <router-view />
+        <!-- <router-view /> -->
       </v-container>
     </v-main>
   </v-app>
@@ -11,9 +11,10 @@
 
 <script>
 import Alert from "./components/Alert";
+import Page1 from "./components/Page1";
 export default {
   name: "App",
-  components: { Alert },
+  components: { Alert, Page1 },
   data() {
     return {};
   },

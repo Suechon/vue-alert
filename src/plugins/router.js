@@ -8,9 +8,8 @@ Vue.use(Router)
 export default new Router({
     mode: 'history',
     routes: [
-        { path: '/', redirect: '/1' },
         {
-            path: '/1',
+            path: '/',
             name: 'page1',
             component: Page1
         },
