@@ -3,6 +3,7 @@
     <v-main>
       <v-container fluid>
         <Alert />
+        <Page1 />
         <!-- <router-view /> -->
       </v-container>
     </v-main>
