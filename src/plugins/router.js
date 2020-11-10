@@ -22,7 +22,6 @@ const routes = [
 const router = new Router({
     mode: 'history',
     routes: routes,
-    base: process.env.ROOT_BASE,
 })
 
 router.beforeEach((to, from, next) => {
