@@ -3,6 +3,5 @@ module.exports = {
     "vuetify"
   ],
   outputDir: 'docs',
-  assetsDir: './',
-  publicPath: './'
+  publicPath: '/vue-alert/'
 }
