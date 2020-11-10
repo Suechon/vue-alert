@@ -22,7 +22,7 @@ const routes = [
 const router = new Router({
     mode: 'history',
     routes: routes,
-    base: process.env.VUE_APP_ROOT_BASE
+    base: '/vue-alert/'
 })
 
 router.beforeEach((to, from, next) => {
