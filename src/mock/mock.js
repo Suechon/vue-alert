@@ -7,7 +7,11 @@ export default {
         mock.onGet('/page1').reply(config => {
             let res = "OK"
             return [200, res]
-        })
+        }),
+            mock.onGet('/page2').reply(config => {
+                let res = "OK"
+                return [200, res]
+            })
 
     }
 

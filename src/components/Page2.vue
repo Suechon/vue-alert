@@ -1,11 +1,11 @@
 <template>
   <div>
-    <p>ページ1</p>
+    <p>ページ2</p>
     <v-btn color="success" @click="clickSuccess">成功</v-btn>
     <v-btn color="error" @click="clickError">失敗</v-btn>
     {{ success }}
     <v-col>
-      <v-btn @click="jump">ページ２へ</v-btn>
+      <v-btn @click="jump">ページ1へ</v-btn>
     </v-col>
   </div>
 </template>
@@ -16,11 +16,11 @@ export default {
   },
   methods: {
     jump() {
-      this.$router.push({ path: "page2" });
+      this.$router.push({ path: "/" });
     },
     clickSuccess() {
       this.axios
-        .get("/page1")
+        .get("/page2")
         .then((response) => {
           this.success = "成功" + response.data;
         })
@@ -28,7 +28,7 @@ export default {
           this.store_setAlert({
             action: true,
             message: "error \n" + e,
-            detail: "[page1]成功ボタンで失敗しました'",
+            detail: "[page2]成功ボタンで失敗しました'",
           });
         });
     },
@@ -42,7 +42,7 @@ export default {
           this.store_setAlert({
             action: true,
             message: e,
-            detail: "[page1]失敗ボタンで失敗しました'",
+            detail: "[page2]失敗ボタンで失敗しました'",
           });
         });
     },
