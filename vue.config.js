@@ -4,5 +4,5 @@ module.exports = {
   ],
   outputDir: 'docs',
   assetsDir: './',
-  publicPath: 'https://suechon.github.io/vue-alert/'
+  publicPath: './'
 }
