@@ -15,9 +15,9 @@ export let client = axios.create({
 Vue.prototype.$axios = axios
 
 //mock起動の設定
-client = axios.create({
-  baseURL: "",
-})
+// client = axios.create({
+//   baseURL: "",
+// })
 mock.run(client)
 console.log("起動")
 console.log(process.env.VUE_APP_ROOT_BASE)
