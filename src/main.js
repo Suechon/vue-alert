@@ -15,6 +15,7 @@ export let client = axios.create({
 Vue.prototype.$axios = axios
 
 //mock起動の設定
+console.log("aa")
 mock.run(client)
 
 Vue.use(VueAxios, axios);
