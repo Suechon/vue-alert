@@ -3,5 +3,5 @@ module.exports = {
     "vuetify"
   ],
   outputDir: 'docs',
-  publicPath: '/vue-alert/'
+  publicPath: 'https://suechon.github.io/vue-alert/'
 }
